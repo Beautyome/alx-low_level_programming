@@ -1,3 +1,3 @@
-#!/bin/ba
-export CFILE=0-main c
+#!/bin/bash
+export CFILE=0-main c : ./0-preprocessorc
 
