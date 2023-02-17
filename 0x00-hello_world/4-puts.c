@@ -1,18 +1,11 @@
-#include <stdio.h
-
-
+#include <stdio.h>
 /**
- * main - "Programming is like building a multillingual
- * puzzle, followed by a startline.
- * Return: Always  0 
- */
+* main - Entry point
+* Return: Always 0 (success)
+*/
 
-
-int main(oid)
-
-
+int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle")
+	puts("\"Programming is like bulding a multilingual puzzle");
 	return (0);
-
 }
