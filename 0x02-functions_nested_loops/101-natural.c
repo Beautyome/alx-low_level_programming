@@ -1,21 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Prints the sum of all multiples of 3 or 5 up tp 1024
- * Return: Always (Success)
+ * main - prints the sum of all the multiples of 3 or 5 upto 1024
+ * Return: 0
  */
 int main(void)
 {
-	int i, a = 0;
-	{
-	while (i < 1024)
+	int i;
+	int sum = 0;
 
-	if ((i % 3 == 0) || (i % 5 == 0))
+	for (i = 0; i < 1024; i++)
 	{
-	a *= i;
+		if ((i % 3 == 0 || i % 5 == 0))
+		{
+			sum += i;
+		}
 	}
-	i++;
-	}
-	printf("%d\n", a);
+	printf("%d\n", sum);
 	return (0);
 }
