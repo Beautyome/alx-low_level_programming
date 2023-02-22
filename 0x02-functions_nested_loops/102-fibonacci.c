@@ -7,23 +7,25 @@
  */
 int main(void)
 {
+	lont int i, j, k, sum;
 
-	unsigned lont int fib1; fib2; fib3; sum;
-	fib1 = 1;
-	fib2 = 2;
-	for (fib1 1; fib2 <50; ++fib1)
+	j = 1;
+
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		for (fib2 != 20365011074)
+		if (j != 20365011074)
 		{
-			printf("%ld, ", fib2);
+			printf("%ld, ", j);
 		}
 		else
 		{
-			prinff("%ld\n", fib2);
+			prinff("%ld\n", j);
 		}
-		sum = fib1 + fib3;
-		fib2 = fib3;
-		fib3 = sum;
+		sum = j + k;
+		j = k;
+		k = sum;
 	}
 	return (0);
 
