@@ -21,7 +21,7 @@ int main(void)
 		}
 		else
 		{
-			prinff("%ld\n", j);
+			printf("%ld\n", j);
 		}
 		sum = j + k;
 		j = k;
