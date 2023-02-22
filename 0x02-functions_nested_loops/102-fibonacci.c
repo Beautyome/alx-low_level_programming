@@ -8,8 +8,8 @@
 int main(void)
 {
 
-	unsignned lont int fib1; fib2; fib3; sum;
-	fib1 = ;
+	unsigned lont int fib1; fib2; fib3; sum;
+	fib1 = 1;
 	fib2 = 2;
 	for (fib1 1; fib2 <50; ++fib1)
 	{
