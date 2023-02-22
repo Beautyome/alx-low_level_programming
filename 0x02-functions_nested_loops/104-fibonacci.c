@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - fibonacci <3
- *
- * Purpose - no hardcore
+ * main - computes and prints the sum of all the multiplication of 3
+ * 5 below 1024 (excluded), followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -21,7 +20,7 @@ int main(void)
 
 	for (i = 1; i < 91; i++)
 	{
-		printf(", % lu", aft);
+		printf(", %lu", aft);
 		aft += bef;
 		bef = aft - bef;
 	}
