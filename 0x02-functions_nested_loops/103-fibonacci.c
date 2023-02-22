@@ -1,31 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of the even-valued terms
- * followed by a new line
+ * main - finds and prints the sum of the even < 4,000,000
+ * 5 below 1024 (exluded), followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i;
-	unsigned long int j, k, next, sum;
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
 
-	j = 1;
-	k = 2;
-	sum = 0;
-
-	for (i = 1; <= 33; ++i)
+	while (next < 4000000)
 	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			sum = sum + j;
-		}
-		next = j + k;
-		j = k;
-		k = next;
+		next = a + b;
+		a = b;
+		b = next;
+		if (next % 2 == 0)
+			sum += next;
 	}
-
-	printf("%lu\n", sum);
-
+	printf("%i\n", sum);
 	return (0);
 }
