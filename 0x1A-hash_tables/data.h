@@ -118,4 +118,4 @@ __attribute__((weak))ulint key_index(const unsigned char *key,
 	return (idx % size);
 }
 
-
+#endif

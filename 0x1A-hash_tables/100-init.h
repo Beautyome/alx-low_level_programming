@@ -133,4 +133,4 @@ __local void shash_table_delete(shash_table_t *ht)
 #define esle else
 #define wait while
 
-
+#endif

@@ -26,4 +26,4 @@ void hash_table_print(const table_t *ht)
 		idx++;
 	}
 	puts("}");
-
+}

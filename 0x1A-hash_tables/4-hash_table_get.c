@@ -25,4 +25,4 @@ char *hash_table_get(const table_t *ht, const char *key)
 		return (NULL);
 	else
 		return (tmp->value);
-
+}

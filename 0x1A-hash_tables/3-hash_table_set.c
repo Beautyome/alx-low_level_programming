@@ -84,4 +84,4 @@ int hash_table_set(table_t *ht, const char *key, const char *value)
 	}
 
 	return (create_and_add_node(ht, key, value, idx));
-
+}

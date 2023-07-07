@@ -29,4 +29,4 @@ hash_table_t *hash_table_create(ulint size)
 	ht->array = array;
 
 	return (ht);
-
+}

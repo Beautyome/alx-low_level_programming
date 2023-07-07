@@ -37,4 +37,4 @@ void hash_table_delete(table_t *ht)
 	}
 	free(ht->array);
 	free(ht);
-
+}

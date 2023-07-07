@@ -15,4 +15,4 @@ ulint __key_index(const unsigned char *key, ulint size)
 
 	idx = hash_djb2(key);
 	return (idx % size);
-
+}
