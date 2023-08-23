@@ -1,31 +1,21 @@
 #!/usr/bin/python3
-"""Module that calculates the perimeter of an island in a grid."""
+"""
+Module get Island Perimeter
+"""
 
 
-def num_water_neighbors(grid, i, j):
-    """Returns the number of water neighbors a cell has in a grid."""
-
-    num = 0
-
-    if i <= 0 or not grid[i - 1][j]:
-        num += 1
-    if j <= 0 or not grid[i][j - 1]:
-        num += 1
-    if j >= len(grid[i]) - 1 or not grid[i][j + 1]:
-        num += 1
-    if i >= len(grid) - 1 or not grid[i + 1][j]:
-        num += 1
-
-    return num
-
-
-    def island_perimeter(grid):
-        """Returns the perimeter of the island in grid."""
-
-        perimeter = 0
-        for i in range(len(grid)):
-            for j in range(len(grid[i])):
-                if grid[i][j]:
-                    perimeter += num_water_neighbors(grid, i, j)
-
-        return perimeter
+def island_perimeter(grid):
+    """ Calculate perimeter of grid where "1" is found"""
+    p = 0
+    for row in range(len(grid)):
+        for col in range(len(grid[0])):
+            if grid[row][col] == 1:
+                if row == 0 or grid[row - 1][col] == 0:
+                    p += 1  # top-side
+                if row == (len(grid) - 1) or grid[row + 1][col] == 0:
+                    p += 1  # bottom-side
+                if col == 0 or grid[row][col - 1] == 0:
+                    p += 1  # left-side
+                if col == (len(grid[0]) - 1) or grid[row][col + 1] == 0:
+                    p += 1  # right-side
+    return p
